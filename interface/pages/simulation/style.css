@@ -291,7 +291,8 @@ h1 {
     }
 }
 
-.materials {
+.materials,
+.labor {
     background-color: var(--card);
     border: var(--border-color) 2px solid;
     border-radius: 20px;
@@ -343,7 +344,8 @@ h1 {
         }
     }
 
-    .list-materials {
+    .list-materials,
+    .list-labor {
         table {
             margin-top: 1.5rem;
             width: 100%;
@@ -381,6 +383,35 @@ h1 {
                 color: var(--primary);
                 font-size: 32px;
                 font-weight: 700;
+            }
+        }
+    }
+
+    .list-labor {
+        .inputs {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .input {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                input {
+                    width: 90%;
+                    border: none;
+                    border-bottom: 1px solid var(--dark-background);
+                    font-size: 18px;
+                    outline: none;
+                    padding: .5rem 0 .2rem .2rem;
+                }
+
+                label {
+                    color: var(--text-secondary);
+                }
             }
         }
     }
