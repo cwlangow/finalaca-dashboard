@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-
-    <title>Finalaca - Painel Administrativo</title>
+    <title>Finalaca - Simulação</title>
 </head>
 
 <body>
     <div class="sidebar">
         <div class="logo">
             <div class="rounded-logo">
-                <img src="assets/logo.png" alt="Logo Finalaca">
+                <img src="../../assets/logo.png" alt="Logo Finalaca">
             </div>
             <h3>Finalaca</h3>
         </div>
 
         <nav>
-            <a href="index.html" class="active"><i data-lucide="layout-dashboard"
-                    class="icon dashboard"></i>Dashboard</a>
+            <a href="../../index.html"><i data-lucide="layout-dashboard" class="icon dashboard"></i>Dashboard</a>
             <a href="#"><i data-lucide="package" class="icon stock"></i>Estoque</a>
-            <a href="/interface/pages/simulation/index.html"><i data-lucide="calculator" class="icon calculator"></i>Simulação</a>
+            <a href="/interface/pages/simulation/index.html" class="active"><i data-lucide="calculator"
+                    class="icon calculator"></i>Simulação</a>
             <a href="#"><i data-lucide="shopping-cart" class="icon shopping"></i>Pedidos</a>
             <a href="#"><i data-lucide="hammer" class="icon projects"></i>Projetos</a>
             <a href="#"><i data-lucide="users" class="icon clients"></i>Clientes</a>
@@ -37,10 +36,10 @@
 
         <div class="perfil">
             <div class="photo">
-                <p>US</p>
+                <p>VN</p>
             </div>
             <div class="name-box">
-                <p class="name">Usuário</p>
+                <p class="name">Vinnicius N.</p>
                 <p class="function">Administrador</p>
             </div>
         </div>
@@ -51,7 +50,7 @@
             <div class="path">
                 <span>Finalaca</span>
                 <i data-lucide="chevron-right"></i>
-                <span>Dashboard</span>
+                <span>Simulação</span>
             </div>
 
             <div class="inputPesquisa">
@@ -63,10 +62,10 @@
             <p class="date">26 Jun, 2026</p>
             <div class="perfil">
                 <div class="photo">
-                    <p>US</p>
+                    <p>VN</p>
                 </div>
                 <div class="name-box">
-                    <p class="name">Usuário</p>
+                    <p class="name">Vinnicius N.</p>
                 </div>
                 <i data-lucide="chevron-down"></i>
             </div>
@@ -74,204 +73,120 @@
     </header>
 
     <main>
-        <div class="head-dashboard">
-            <div>
-                <h1>Boa noite, Usuário!👋</h1>
-                <p>Acompanhe o desempenho da Finalaca em tempo real.</p>
+        <div class="title-page">
+            <div class="main-content">
+                <h1>Nova Simulação</h1>
+                <p>Preencha os dados do projeto para calcular custos e precificação.</p>
             </div>
-
-            <button><i data-lucide="plus"></i> Novo projeto</button>
+            <button>Limpar tudo</button>
         </div>
 
-        <div class="cards">
-            <div class="upper">
-                <div class="receita-mes">
-
-                    <div class="upper">
-                        <p>Receita do Mês</p>
-                        <div><i data-lucide="dollar-sign"></i></div>
-                    </div>
-
-                    <h3>R$ 248.500</h3>
-
-                    <div class="up-lower">
-                        <div class="graph">
-                            <i data-lucide="trending-up"></i>
-                            <p class="porcent">+12,4%</p>
-                        </div>
-                        <p class="context">vs. mês anterior</p>
-                    </div>
+        <section class="materials">
+            <div class="title-section">
+                <div class="texts">
+                    <h2>Materiais</h2>
+                    <h3>3 itens</h3>
                 </div>
 
-                <div class="pedidos-ativos">
-                    <div class="upper">
-                        <p>Pedidos Ativos</p>
-                        <div><i data-lucide="package"></i></div>
-                    </div>
-                    <h3>42</h3>
-                    <div class="up-lower">
-                        <div class="graph">
-                            <i data-lucide="trending-up"></i>
-                            <p>+5</p>
-                        </div>
-                        <p class="context">novos esta semana</p>
-                    </div>
-                </div>
-
-                <div class="projetos-andamento">
-                    <div class="upper">
-                        <p>Projetos em Andamento</p>
-                        <div><i data-lucide="hammer"></i></div>
-                    </div>
-                    <h3>28</h3>
-                    <div class="graph">
-                        <p>grafico aqui</p>
-                    </div>
-                    <p class="context">68% da capacidade da equipe</p>
-                </div>
-
-                <div class="novos-clientes">
-                    <div class="upper">
-                        <p>Novos Clientes</p>
-                        <div><i data-lucide="user-plus"></i></div>
-                    </div>
-
-                    <h3>17</h3>
-                    <p class="context">Captados neste mês</p>
-                    <div class="graph">
-                        <i data-lucide="trending-up"></i>
-                        <p>+8,1%</p>
-                    </div>
-                </div>
+                <button><i data-lucide="plus"></i> Novo material</button>
             </div>
-            <div class="mid">
-                <div class="graph">
-                    <div class="upper">
-                        <div class="title">
-                            <h3>Pedidos por mês</h3>
-                            <p>Últimos 6 meses</p>
-                        </div>
-                        <p>+118%</p>
-                    </div>
-                    <canvas id="myChart"></canvas>
-                </div>
-                <div class="dois">
-                    <div class="alerts-box">
-                        <div class="title">
-                            <i data-lucide="triangle-alert"></i>
-                            <h3>Alertas</h3>
-                        </div>
-                        <div class="alerts">
-                            <div class="alert">
-                                <h5>Prazo próximo</h5>
-                                <p>Pedido #1042 vence em 2 dias</p>
-                            </div>
-                            <div class="alert">
-                                <h5>Aprovação pendente</h5>
-                                <p>Orçamento #318 aguardando cliente</p>
-                            </div>
-                            <div class="alert">
-                                <h5>Estoque baixo</h5>
-                                <p>MDF Carvalho Nórdico em falta</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="previous-delivery">
-                        <div class="title">
-                            <i data-lucide="calendar-clock"></i>
-                            <h3>Próximas entregas</h3>
-                        </div>
-
-                        <div class="dates">
-                            <div class="date">
-                                <div class="client">
-                                    <p class="photo-client">UC</p>
-                                    <div class="client-infos">
-                                        <h5>Usuário cliente</h5>
-                                        <p>Cozinha Planejada</p>
-                                    </div>
-                                </div>
-                                <p>Amanhã, 09h</p>
-                            </div>
-                            <div class="date">
-                                <div class="client">
-                                    <p class="photo-client">UC</p>
-                                    <div class="client-infos">
-                                        <h5>Usuário cliente</h5>
-                                        <p>Cozinha Planejada</p>
-                                    </div>
-                                </div>
-                                <p>Amanhã, 09h</p>
-                            </div>
-                            <div class="date">
-                                <div class="client">
-                                    <p class="photo-client">UC</p>
-                                    <div class="client-infos">
-                                        <h5>Usuário cliente</h5>
-                                        <p>Cozinha Planejada</p>
-                                    </div>
-                                </div>
-                                <p>Amanhã, 09h</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="lower">
+            <div class="list-materials">
                 <table>
                     <thead>
                         <tr>
-                            <td>ID</td>
-                            <td>CLIENTE</td>
-                            <td>PROJETO</td>
-                            <td>VALOR</td>
-                            <td>STATUS</td>
-                            <td>DATA</td>
-                            <td class="acoes">AÇÕES</td>
+                            <td>PRODUTO</td>
+                            <td>QTD(m²)</td>
+                            <td>R$/m²</td>
+                            <td>SUBTOTAL</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>#1042</td>
-                            <td>Usuário cliente</td>
-                            <td class="projeto">Cozinha Planejada</td>
-                            <td class="valor">R$ 18.400</td>
-                            <td><p class="status aguardando">Aguardando</p></td>
-                            <td class="data">24 jun 2026</td>
-                            <td class="acoes"><i data-lucide="eye"></i><i data-lucide="pencil"></i></td>
+                            <td>MDF White</td>
+                            <td>4,50</td>
+                            <td>R$85,00</td>
+                            <td class="total">R$382,50</td>
+                            <td><i data-lucide="x"></i></td>
                         </tr>
                         <tr>
-                            <td>#1042</td>
-                            <td>Usuário cliente</td>
-                            <td class="projeto">Cozinha Planejada</td>
-                            <td class="valor">R$ 18.400</td>
-                            <td><p class="status concluido">Concluido</p></td>
-                            <td class="data">24 jun 2026</td>
-                            <td class="acoes"><i data-lucide="eye"></i><i data-lucide="pencil"></i></td>
+                            <td>MDF White</td>
+                            <td>4,50</td>
+                            <td>R$85,00</td>
+                            <td class="total">R$382,50</td>
+                            <td><i data-lucide="x"></i></td>
                         </tr>
                         <tr>
-                            <td>#1042</td>
-                            <td>Usuário cliente</td>
-                            <td class="projeto">Cozinha Planejada</td>
-                            <td class="valor">R$ 18.400</td>
-                            <td><p class="status andamento">Andamento</p></td>
-                            <td class="data">24 jun 2026</td>
-                            <td class="acoes"><i data-lucide="eye"></i><i data-lucide="pencil"></i></td>
-                        </tr>
-                        <tr>
-                            <td>#1042</td>
-                            <td>Usuário cliente</td>
-                            <td class="projeto">Cozinha Planejada</td>
-                            <td class="valor">R$ 18.400</td>
-                            <td><p class="status concluido">Concluido</p></td>
-                            <td class="data">24 jun 2026</td>
-                            <td class="acoes"><i data-lucide="eye"></i><i data-lucide="pencil"></i></td>
+                            <td>MDF White</td>
+                            <td>4,50</td>
+                            <td>R$85,00</td>
+                            <td class="total">R$382,50</td>
+                            <td><i data-lucide="x"></i></td>
                         </tr>
                     </tbody>
                 </table>
+
+                <h3>Total: <span>R$382,50</span></h3>
             </div>
-        </div>
+        </section>
+
+        <section class="labor">
+            <div class="title-section">
+                <div class="texts">
+                    <h2>Mão de Obra</h2>
+                </div>
+            </div>
+
+            <div class="list-labor">
+                <div class="inputs">
+                    <div class="input employee">
+                        <label for="employee">Funcionários</label>
+                        <input type="number" name="employee" id="employee">
+                    </div>
+                    <div class="input hours">
+                        <label for="hours">Horas Estimadas</label>
+                        <input type="number" name="hours" id="hours">
+                    </div>
+                    <div class="input price">
+                        <label for="price">Valor por hora(R$)</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                </div>
+                <h3>Total: <span>R$382,50</span></h3>
+            </div>
+        </section>
+
+        <section class="result">
+            <div class="title-section">
+                <div class="texts">
+                    <h2>Resultado</h2>
+                </div>
+            </div>
+            <div class="results">
+                <div class="total-cost">
+                    <p>Custo Total</p>
+                    <h3>R$4.027,50</h3>
+                </div>
+                <div class="profit">
+                    <p>Margem de Lucro</p>
+                    <h3 class="porcent">50%</h3>
+                    <input type="range" name="profit" id="profit">
+                    <div>
+                        <p>0%</p>
+                        <p>100%</p>
+                    </div>
+                    <p>Lucro Absoluto: <span>R$1.703.41</span></p>
+                </div>
+                <div class="final-price">
+                    <p>Preço Final de Venda</p>
+                    <h3>R$5.753,15</h3>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="save">Salvar Simulação</button>
+                <button class="export"><i data-lucide="file-text"></i>Salvar PDF</button>
+            </div>
+        </section>
     </main>
 </body>
 
