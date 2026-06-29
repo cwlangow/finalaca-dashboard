@@ -261,3 +261,32 @@ header {
         }
     }
 }
+
+main{
+    margin: 2rem 15rem;
+    margin-top: 7rem;
+}
+
+h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 36px;
+}
+
+.title-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        color: var(--text-secondary);
+        font-size: 16px;
+    }
+
+    button{
+        color: var(--text-secondary);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
