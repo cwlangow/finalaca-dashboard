@@ -517,6 +517,10 @@ h1 {
                 border-radius: 50px;
             }
 
+            .price-total{
+                font-weight: 700;
+            }
+
             .aguardando {
                 background-color: var(--muted);
                 color: var(--text-secondary);
